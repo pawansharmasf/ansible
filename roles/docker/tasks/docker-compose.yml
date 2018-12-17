@@ -1,0 +1,5 @@
+---
+- name: crate docker image
+  docker_image:
+   path: /app
+   name: webimage

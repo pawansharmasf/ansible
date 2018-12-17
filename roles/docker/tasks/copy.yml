@@ -1,0 +1,12 @@
+---
+- name: copy files
+  copy: src={{item}} dest=/app  mode=u+x
+  with_items:
+  - run.sh
+
+
+- name: copy non executable files 
+  copy: src={{item}} dest=/app
+  with_items:
+  - Dockerfile
+  - index.html

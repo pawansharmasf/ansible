@@ -1,0 +1,10 @@
+---
+- name: run container
+  docker_container:
+      name: web1
+      image: webimage
+      state: started
+      tty: true
+      detach: true
+      ports:
+      - "8080:80"

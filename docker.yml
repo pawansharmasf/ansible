@@ -1,0 +1,7 @@
+---
+- name: docker deploy
+  hosts: dockerhost
+  become: yes
+  gather_facts: no
+  roles:
+  - docker

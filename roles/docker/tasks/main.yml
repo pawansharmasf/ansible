@@ -1,0 +1,7 @@
+---
+- include: install.yml
+- include: pull.yml
+- include: copy.yml
+- include: docker-compose.yml
+- include: container.yml
+
